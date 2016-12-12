@@ -891,8 +891,8 @@ def create_parser():
     )
     reg.add_argument(
         '--tos_sha256', help='SHA-256 hash of the contents of Terms Of '
-        'Service URI contents.', default='33d233c8ab558ba6c8ebc370a509a'
-        'cdded8b80e5d587aa5d192193f35226540f', metavar='HASH',
+        'Service URI contents.', default='6373439b9f29d67a5cd4d18cbc7f264809342dbf21cb2ba2fc7588df987a6221',
+        metavar='HASH',
     )
     reg.add_argument(
         '--email', help='Email address. CA is likely to use it to '
@@ -1475,8 +1475,7 @@ class IntegrationTests(unittest.TestCase):
     # this is a test suite | pylint: disable=missing-docstring
 
     SERVER = 'http://localhost:4000/directory'
-    TOS_SHA256 = ('b16e15764b8bc06c5c3f9f19bc8b99fa'
-                  '48e7894aa5a6ccdad65da49bbf564793')
+    TOS_SHA256 = '6373439b9f29d67a5cd4d18cbc7f264809342dbf21cb2ba2fc7588df987a6221'
     PORT = 5002
 
     @classmethod
